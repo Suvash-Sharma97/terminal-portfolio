@@ -1,0 +1,58 @@
+/* Terminal heading styling */
+.terminal-user {
+    color: #269b64; /* Green */
+}
+
+.terminal-symbol {
+    color: #ffffff; /* White */
+}
+
+.terminal-tilde {
+    color: #888888; /* Grey */
+}
+
+/* .terminal-input::after {
+    content: "|";
+    display: inline-block;
+    margin-left: 2px;
+    animation: blink 1s infinite;
+    color: #ffffff;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+} */
+
+.text-large {
+    font-size: 1.25rem;
+    font-family: monospace;
+    color:white;
+}
+
+.text-success{
+    color: #ffffff;
+}
+
+
+
+
+
+
+.terminal-input {
+    color: white !important; 
+    caret-color: white;
+}
+
+.terminal-input::after {
+    content: "|";
+    display: inline-block;
+    margin-left: 2px;
+    animation: blink 1s infinite;
+    color: white;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}

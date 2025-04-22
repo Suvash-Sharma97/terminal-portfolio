@@ -1,38 +1,74 @@
-.App {
-  text-align: center;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.parent {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Top terminal bar */
+#navbar {
+    background-color: #222;
+    color: #ffffff;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+    height: 40px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#terminal-heading {
+    font-size: medium;
+    margin-left: 45%;
+    font-size: 14px;
 }
 
-.App-link {
-  color: #61dafb;
+#window-controls {
+    display: flex;
+    gap: 8px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Fake close, maximize, and minimize buttons */
+.control-btn {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
 }
+
+.close {
+    background-color: red;
+}
+
+.maximize {
+    background-color: yellow;
+}
+
+.minimize {
+    background-color: green;
+}
+
+/* Terminal window */
+#container {
+    background-color: #300a24;
+    color: #13613d;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    display: flex;
+    align-items: start;
+}
+
+#terminal-text {
+    color: #269f60;
+    font-size: 16px;
+}
+
