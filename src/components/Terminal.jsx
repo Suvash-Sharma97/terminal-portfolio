@@ -60,15 +60,14 @@ const Terminal = ({ root, user }) => {
         ),
         skills: (
             <>
-                <pre>
-                    <div>Frontend : React.js</div>
-                    <div>Backend : Spring Boot with Spring AI and Spring Security</div>
-                    <div>Database: MySQL</div>
-                    <div>Languages: Python, Java and C</div>
-                    <div>Plus: Version Control with Git and Github, Postman</div>
-                    <div>Security: Burpsuite, Linux and Shell Scripting, Experience with CTFs, PortSwigger Labs and DVWA</div>
-                    <div>I guess being excellent with problem solving also counts as a skill :)</div>
-                </pre>
+                <div>Frontend : React.js</div>
+                <div>Backend : Spring Boot with Spring AI and Spring Security</div>
+                <div>Database: MySQL</div>
+                <div>Languages: Python, Java and C</div>
+                <div>Plus: Version Control with Git and Github, Postman</div>
+                <div>Security: Burpsuite, Linux and Shell Scripting, Experience with CTFs, PortSwigger Labs and DVWA</div>
+                <div>I guess being excellent with problem solving also counts as a skill :)</div>
+
             </>
         ),
         sayhi: (<div>Thanks for reaching out! Message recorded (mocked).</div>),
@@ -78,16 +77,16 @@ const Terminal = ({ root, user }) => {
         ls: "They say it's not a good habit to peek into someone else's folders.....jk :)",
         uptime: (<div>Uptime: 8 months, 12 days</div>),
         neofetch: (
-            <pre>
-                OS: Suvash Linux x86_64
-                Kernel: 6.1.0
-                Uptime: 8 months
-                Packages: 1823 (npm)
-                Shell: custom-terminal
-                Resolution: 1920x1080
-                Theme: Navy Blue [Dark]
-                Terminal: WebTTY
-            </pre>
+            <>
+                <div>OS: Suvash Linux x86_64</div>
+                <div>Kernel: 6.1.0</div>
+                <div>Uptime: 8 months</div>
+                <div>Packages: 1823 (npm)</div>
+                <div>Shell: custom-terminal</div>
+                <div>Resolution: 1920x1080</div>
+                <div>Theme: Navy Blue [Dark]</div>
+                <div>Terminal: WebTTY</div>
+            </>
         ),
         exit: "No, please don't leave this early :(",
         fortune: (<div>"Code is like humor. When you have to explain it, it’s bad."</div>),
